@@ -1,0 +1,46 @@
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../static/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../static/css/ubuntu" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+        <script src="../static/js/jquery-3.4.1.min.js"></script>
+        <script src="../static/js/jquery-ui.js" ></script>
+        <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+        <script src="../static/js/script.js"></script>
+        <link rel="shortcut icon" type="template/png" href="../static/img/immo-neo.png">
+        <title>Simulateur d'Economie</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <br>
+                    <div class="notice notice-info">
+                        <h1> Economisez <strong><span id="eco"></span></strong> €* <br> <div id="littletext">en passant par immo-neo.com</div></h1>
+                    </div>
+                    <br>
+                    <input type="range" class="slider" oninput="slider()" id="amount" class="form-control" min="150000" max="1500000" step="50000" value="350000"-->
+                    <br>
+                    <div id="price">
+                        <div class="minbar">150 000 €</div>
+                        <div class="maxbar">1 500 000 €</div>
+                    </div>
+                    <br>
+                    <div class="notice notice-success"> 
+                    <h2> Votre prix de vente: <strong><span id="value"></span></strong> €</h2>
+                    <p><div id="littlestar">*en se basant sur un taux de commission de 6 % (Sur la base d'un 3 pièces)</div></p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            slider();
+        })
+    </script>
+</html>
